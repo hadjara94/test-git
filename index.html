@@ -1,0 +1,54 @@
+<html>
+<head>
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="form1.css" rel="stylesheet">
+<title>Un exemple de formulaire</title>
+</head>
+	<body>
+	  <H1>Exemple de formulaire</H1> 
+		<form method="post" action="formulair-exemple" class="col-lg-6 well">	 	
+		<legend>Questionnaire</legend> 
+	 	<div class="form-group has-error">
+	 	<label class="control-label">Nom </label>
+	 	<input type="text" name="nom" class="form-control input-lg">
+	 	</div>
+
+	 	<div class="form-group">
+            <label>Prenom</label>
+	 	     <input type="text" name="prenom" class="form-control input-lg">
+	 	</div>
+
+	 	<div class="form-group has-error has-feedback">
+	 	    <label>Mot de passe</label>
+	 	    <input type="password" name="mot de passe" class="form-control input-lg">
+	 	    <span class="glyphicon glyphicon-remove pull-right"></span>
+	 	</div>
+
+	 	<div class="form-group">
+	 	     <label>Faites un choix</label>
+	 	     <input type="radio" name="choix" value="oui">
+	 	     <label>oui</label>
+
+	 	     <input type="radio" name="choix" value="non">
+	 	     <label>Non</label>
+	 	</div>
+
+	 	<div class="form-group">
+	 	     <label>Prommation langage</label>
+	 	     <Select name="programmation" class="form-control input-lg">
+	 	     <optgroup>java</optgroup>
+	 	     <option>c++</option>
+	 	     <option>ruby</option>
+	 	     <option>matlab</option>
+	 	     <option>python</option>
+	 	     <option>php</option>
+	 	     </Select>
+
+        <div class="form-group">
+	 	     <label>Commentaire</label>
+	 	     <textarea name="commentaire" rows="10" cols="40" class="form-control"></textarea>
+	 	</div>
+
+	 	<input type="submit" value="Envoyer" class="pull-right">
+</body>
+</html>
